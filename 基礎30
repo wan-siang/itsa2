@@ -1,0 +1,36 @@
+#include    <iostream>
+using namespace std;
+
+int main(){
+    int month;
+    int day;
+
+    cin>>month>>day;
+    int number = 100 * month + day;
+
+    if(121<=number && number<=218){
+        cout<<"Aqusrius\n";
+    }else if(219<=number && number<=320){
+        cout<<"Pisces\n";
+    }else if(321<=number && number<=420){
+        cout<<"Aries\n";
+    }else if(421<=number && number<=521){
+        cout<<"Taurus\n";
+    }else if(522<=number && number<=621){
+        cout<<"Gemini\n";
+    }else if(622<=number && number<=722){
+        cout<<"Cancer\n";
+    }else if(723<=number && number<=823){
+        cout<<"Leo\n";
+    }else if(824<=number && number<=923){
+        cout<<"Virgp\n";
+    }else if(924<=number && number<=1023){
+        cout<<"Libra\n";
+    }else if(1024<=number && number<=1122){
+        cout<<"Scorpio\n";
+    }else if(1123<=number && number<=1221){
+        cout<<"Sagittarius\n";
+    }else{
+        cout<<"Capricorn\n";
+    }
+}
