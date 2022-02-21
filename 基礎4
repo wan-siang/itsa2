@@ -1,0 +1,35 @@
+#include    <iostream>
+using namespace std;
+
+int main(){
+    int start_hr, start_min;
+    int end_hr, end_min;
+    int start, end;
+    int gap;
+    int sum = 0;
+
+    cin>>start_hr>>start_min;
+    cin>>end_hr>>end_min;
+
+    start = start_hr * 60 + start_min;
+    end = end_hr * 60 + end_min;
+    gap = end - start;
+
+    if(gap<=120){
+        //within 2 hr
+        sum = 30*(gap/30);
+    }else{
+        sum += 30*4;
+        if(gap<240){
+            gap -= 120;
+            sum += 40*(gap/30);
+            
+        }else{
+            sum += 40*4;
+            gap -= 240;
+            sum += 60*(gap/30);
+        }
+    }
+
+    cout<<sum<<"\n";
+}
