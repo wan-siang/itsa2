@@ -19,12 +19,12 @@ int main(){
     double average;
 
 	while (getline(cin,str)){
-		stringstream ss(str);   //«Øºcªì©l¤Æ
+		stringstream ss(str);   
 		total = 0;
-	    sum = 0;
+	        sum = 0;
 		while (ss >> num){
 		    total++;
-			sum += num;
+		sum += num;
 		}
 
 		average = ((double)sum)/total;
