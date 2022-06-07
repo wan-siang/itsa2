@@ -8,7 +8,7 @@ int main(){
     double km;
 
     cin >> mile;
+    //英里轉公里
     km = mile*1.6;
     cout << fixed << setprecision(1) << km << endl;
-
 }
