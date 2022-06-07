@@ -11,6 +11,7 @@ int main(){
     max = number;
     min = number;
 
+    //只max&min
     for(int i = 0; i < 9; i++){
         cin >> number;
         if(number > max){
@@ -19,6 +20,7 @@ int main(){
             min = number;
         }
     }
+    //輸出到小數點後兩位
     cout << "maximum:" << fixed << setprecision(2) << max << endl;
     cout << "minimum:" << fixed << setprecision(2) << min << endl;
 }
