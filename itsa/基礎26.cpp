@@ -9,17 +9,17 @@ class pairs{
         int num;
         int sum;
 };
-
+//轉成各位數和
 int digit_sum(int num){
     int sum = 0;
-
+    
     while(num){
         sum += (num%10);
         num /= 10;
     }
     return sum;
 }
-
+//先digit_sum在比num
 bool cmp(pairs a, pairs b) {
     if(a.sum == b.sum){
         return a.num < b.num;
