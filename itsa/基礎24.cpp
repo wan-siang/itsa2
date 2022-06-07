@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    long double r, n, p;
+    long double r, n, p;    //利率, 期數, 金額/期
     cin >> r >> n >> p;
     double money = 0.0;
     r += 1.0;
